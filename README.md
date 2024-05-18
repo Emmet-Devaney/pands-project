@@ -31,7 +31,19 @@ The data set contains 3 classes of iris plant, with 50 samples per class. I foun
 -	sepal width in cm
 -	petal length in cm
 -	petal width in cm
--	species: -- Iris Setosa -- Iris Versicolour -- Iris Virginica.
+#
+-	species: 
+- -  Iris Setosa 
+
+![Iris Setosa](./Image%20Files/Iris%20Setosa.png)
+ - Iris Versicolor
+
+![Iris Versicolour](./Image%20Files/Iris%20Versicolor.jpg)
+- - Iris Virginica.
+
+![Iris Virginica](./Image%20Files/Iris%20Virginica.jpg)
+
+
 
 This dataset had been used by Ronald Fisher in 1936, published as The Use of Multiple Measurements in Taxonomic Problems, to show how, using statistics, you may distinguish the differences between species of iris with just the petal and sepal measurements. This is now referred to as “Linear Discriminant Analysis” (What is LDA?).
 

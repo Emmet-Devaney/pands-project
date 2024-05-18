@@ -7,7 +7,7 @@ This repository is an analysis of the Iris Dataset by R. A. Fisher.
 - matplotlib
 - seaborn
 
-1. # About This Repository 
+# 1.  About This Repository 
 As I am still a beginning my coding journey, I had decided to display this project in a Jupyter notebook as that is an easier format for me.
 
 **The files that this Repository contains:**
@@ -23,7 +23,7 @@ As I am still a beginning my coding journey, I had decided to display this proje
 
 
 
-2. # The Dataset
+# 2. The Dataset
 The data set contains 3 classes of iris plant, with 50 samples per class. I found that one class is linearly separable from the other 2; the latter were not distinctly separable from each other.
 
 **The Variables:**
@@ -33,45 +33,21 @@ The data set contains 3 classes of iris plant, with 50 samples per class. I foun
 -	petal width in cm
 -	species: -- Iris Setosa -- Iris Versicolour -- Iris Virginica.
 
-This dataset had been used by Ronald Fisher in 1936, published as The Use of Multiple Measurements in Taxonomic Problems, to show how, using statistics, you may distinguish the differences between species of iris with just the petal and sepal measurements. This is now referred to as “Linear Discriminant Analysis”.
+This dataset had been used by Ronald Fisher in 1936, published as The Use of Multiple Measurements in Taxonomic Problems, to show how, using statistics, you may distinguish the differences between species of iris with just the petal and sepal measurements. This is now referred to as “Linear Discriminant Analysis” (What is LDA?).
 
-3. # The Analysis of Data
+# 3. The Analysis of Data
 
 For this project, I will be using pandas to read the dataset and a combination of matplotlib and seaborn to perform a statistical investigation and illustrate patterns present.
 
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 150 entries, 0 to 149
-Data columns (total 5 columns):
- #   Column         Non-Null Count  Dtype  
----  ------         --------------  -----  
- 0   SepalLengthCm  150 non-null    float64
- 1   SepalWidthCm   150 non-null    float64
- 2   PetalLengthCm  150 non-null    float64
- 3   PetalWidthCm   150 non-null    float64
- 4   Species        150 non-null    object 
-dtypes: float64(4), object(1)
+![alt text](<Iris Table Types.png>)
 
-Species
-Iris-setosa        50
-Iris-versicolor    50
-Iris-virginica     50
-Name: count, dtype: int64
-
-4. # Displaying the Statistics
+# 4. Displaying the Statistics
 
 The describe function in pandas shows the basic statistics e.g means, standard deviations, medians, etc.
 
-	SepalLengthCm	SepalWidthCm	PetalLengthCm	PetalWidthCm
-count	150.000000	150.000000	150.000000	150.000000
-mean	5.843333	3.054000	3.758667	1.198667
-std	0.828066	0.433594	1.764420	0.763161
-min	4.300000	2.000000	1.000000	0.100000
-25%	5.100000	2.800000	1.600000	0.300000
-50%	5.800000	3.000000	4.350000	1.300000
-75%	6.400000	3.300000	5.100000	1.800000
-max	7.900000	4.400000	6.900000	2.500000
+![alt text](<Iris Mean +.png>)
 
-5. # Data Visualisation
+# 5. Data Visualisation
 
 Below I have included visualisations of the data to better understand the differences and correlations between the variables measured:
 
@@ -79,15 +55,19 @@ Below I have included visualisations of the data to better understand the differ
 
 (Note to self, figure out how to add imhgaes to this file)
 
+![alt text](<Histogram Tables.png>)
+
 **Scatterplots**
 
-(Same as above)
+![alt text](<Scatterplot Tables.png>)
 
 From the images, we can note that the “Iris-Setosa” species is noticeably different, especially highlighted in the “Petal Measurement”. There does appear to be a difference between the other two species, but the difference is not as stark as the “Setosa”.
 
-6. # Correlations
+# 6. Correlations
 
 Using the Pandas correlation function, we may be able to discern a distinction between the variables measured.
+
+![alt text](<Overall Width + Length.png>)
 
 Here we can note:
 
@@ -98,15 +78,30 @@ Here we can note:
 
 A good way to visualise this information is through a heatmap:
 
-(Heatmap image)
+![alt text](Heatmap.png)
 
-7. # Conclusions
+# 7. Conclusions
 
-... Due to finish
+My conclusions based on the data are below:
+*	There is a distinct difference in size between the Iris Setosa and the other Iris Species:
+	If an iris’ data is presented without the species, and the dimensions of the sepals are short and wide with short and narrow petals, it is likely that the species is Setosa.
+*	An observation can be drawn that the size of the petal dimensions carries more importance in identification than the sepal dimensions (at least for differentiating between the Versicolour and the Virginica):
+	For the remaining two species, Versicolour and Virginica, the sepal dimensions are somewhat similar while the petal dimensions differ by length vs width accordingly.
 
-8. # References
 
-9. # Further Links:
+# 8. References
+Fisher,R. A.. (1988). Iris. UCI Machine Learning Repository. https://doi.org/10.24432/C56C76.
 
-... Add with conclusion
+Kumar, R. (2018) * Seaborn Plot to Visualise Itis Dataset.* Kaggle Notebook. https://www.kaggle.com/rakesh6184/seaborn-plot-to-visualize-iris-data
 
+Mendis, A. (2019) Data Visualization in Python: Matplotlib vs Seaborn. KDnuggets. https://www.kdnuggets.com/2019/04/data-visualization-python-matplotlib-seaborn.html
+
+# 9. Further Links:
+
+iris.csv file: https://github.com/aswintechguy/Machine-Learning-Projects/blob/efe051137e869c76f83c75a685f5f16310186c24/Iris%20dataset%20analysis%20-%20Classification/Iris.csv
+
+pandas.DataFrame.to_string: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_string.html
+
+How to create a seaborn correlation heatmap in Python?: https://www.geeksforgeeks.org/how-to-create-a-seaborn-correlation-heatmap-in-python/
+
+What is LDA?: https://www.ibm.com/topics/linear-discriminant-analysis#:~:text=Linear%20discriminant%20analysis%20(LDA)%20is,helps%20optimize%20machine%20learning%20models.

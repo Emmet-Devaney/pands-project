@@ -53,8 +53,6 @@ Below I have included visualisations of the data to better understand the differ
 
 **Histograms:**
 
-(Note to self, figure out how to add imhgaes to this file)
-
 ![Histograms](/pands/pands-project/Image%20Files/Histogram%20Tables.png)
 
 **Scatterplots**

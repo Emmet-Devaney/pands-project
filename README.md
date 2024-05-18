@@ -39,7 +39,7 @@ This dataset had been used by Ronald Fisher in 1936, published as The Use of Mul
 
 For this project, I will be using pandas to read the dataset and a combination of matplotlib and seaborn to perform a statistical investigation and illustrate patterns present.
 
-![alt text](<Iris Table Types.png>)
+![Iris Table Types](Iris Table Types.png "Iris Table Types")
 
 # 4. Displaying the Statistics
 

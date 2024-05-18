@@ -39,13 +39,13 @@ This dataset had been used by Ronald Fisher in 1936, published as The Use of Mul
 
 For this project, I will be using pandas to read the dataset and a combination of matplotlib and seaborn to perform a statistical investigation and illustrate patterns present.
 
-![alt text](<Iris Table Types.png>)
+![alt text](/pands/pands-project/Image%20Files/Iris%20Table%20Types.png)
 
 # 4. Displaying the Statistics
 
 The describe function in pandas shows the basic statistics e.g means, standard deviations, medians, etc.
 
-![alt text](<Iris Mean +.png>)
+![alt text](/pands/pands-project/Image%20Files/Iris%20Mean%20+.png)
 
 # 5. Data Visualisation
 
@@ -55,11 +55,11 @@ Below I have included visualisations of the data to better understand the differ
 
 (Note to self, figure out how to add imhgaes to this file)
 
-![alt text](<Histogram Tables.png>)
+![alt text](/pands/pands-project/Image%20Files/Histogram%20Tables.png)
 
 **Scatterplots**
 
-![alt text](<Scatterplot Tables.png>)
+![alt text](/pands/pands-project/Image%20Files/Scatterplot%20Tables.png)
 
 From the images, we can note that the “Iris-Setosa” species is noticeably different, especially highlighted in the “Petal Measurement”. There does appear to be a difference between the other two species, but the difference is not as stark as the “Setosa”.
 
@@ -67,7 +67,7 @@ From the images, we can note that the “Iris-Setosa” species is noticeably di
 
 Using the Pandas correlation function, we may be able to discern a distinction between the variables measured.
 
-![alt text](<Overall Width + Length.png>)
+![alt text](/pands/pands-project/Image%20Files/Overall%20Width%20+%20Length.png)
 
 Here we can note:
 
@@ -78,7 +78,7 @@ Here we can note:
 
 A good way to visualise this information is through a heatmap:
 
-![alt text](Heatmap.png)
+![alt text](/pands/pands-project/Image%20Files/Heatmap.png)
 
 # 7. Conclusions
 
